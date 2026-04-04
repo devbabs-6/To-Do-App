@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Stylish To-Do List</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Task manager</h1>
+      <div class="input-container">
+        <input
+          type="text"
+          id="taskInput"
+          placeholder="What needs to be done?"
+        />
+        <button onclick="addTask()">Add Task</button>
+      </div>
+      <div class="task-info">
+        <span id="taskCounter">0 Tasks, 0 completed</span
+        ><button onclick="clearCompletedTasks()" class="clear-btn">
+          Clear completed
+        </button>
+      </div>
+      <ul id="taskList"></ul>
+    </div>
+    <script src="Index.js"></script>
+  </body>
+</html>
